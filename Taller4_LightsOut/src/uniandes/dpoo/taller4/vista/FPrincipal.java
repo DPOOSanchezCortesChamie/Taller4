@@ -1,4 +1,4 @@
-package uniandes.dpoo.taller4.modelo;
+package uniandes.dpoo.taller4.vista;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -9,8 +9,6 @@ import javax.swing.JLabel;
 
 public class FPrincipal extends JFrame implements ActionListener{
 
-	
-	
 	public FPrincipal() {
 		
 		this.setLayout(new BorderLayout());
