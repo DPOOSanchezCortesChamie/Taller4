@@ -9,6 +9,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+
 public class PInfo extends JPanel implements Observer{
 	public PInfo() {
 		this.setLayout(new FlowLayout());
