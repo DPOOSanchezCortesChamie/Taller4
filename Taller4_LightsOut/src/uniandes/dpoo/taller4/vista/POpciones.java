@@ -54,7 +54,6 @@ public class POpciones extends JPanel{
 		grupoBotones.add(botonMedio);
 		grupoBotones.add(botonDificil);
 		
-		
 		panel.add(lblTamano);
 		panel.add(seleccionDificultad);
 		panel.add(lblDificultad);
@@ -62,7 +61,6 @@ public class POpciones extends JPanel{
 		panel.add(botonMedio);
 		panel.add(botonDificil);
 		
-	
 		this.add(panel);
 		
 	}
