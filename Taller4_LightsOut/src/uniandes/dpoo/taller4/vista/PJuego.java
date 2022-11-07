@@ -2,20 +2,23 @@ package uniandes.dpoo.taller4.vista;
 
 import uniandes.dpoo.taller4.controlador.ControladorJuego;
 
-import java.util.Observable;
-import java.util.Observer;
+import java.awt.Dimension;
+import java.awt.Graphics;
 
 import javax.swing.JPanel;
 
-public class PJuego extends JPanel implements Observer{
+public class PJuego extends JPanel {
+	
 	private ControladorJuego controlador;
+	
 	public PJuego(ControladorJuego controlador) {
 		this.controlador = controlador;
 	}
-
-	@Override
-	public void update(Observable o, Object arg) {
-		// TODO Auto-generated method stub
+	
+	public void pintarTablero(Graphics g) {
+		Dimension d = this.getSize();
 		
 	}
+	
+
 }

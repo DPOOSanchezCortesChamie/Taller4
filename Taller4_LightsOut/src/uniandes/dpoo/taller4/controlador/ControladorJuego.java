@@ -4,9 +4,10 @@ import uniandes.dpoo.taller4.modelo.Tablero;
 
 public class ControladorJuego {
 	Tablero tablero;
+	int tamano;
 	
 	public ControladorJuego() {
-
+		tamano = 5;
 	}
 	
 	public void crearTablero(int tamano) {
@@ -21,6 +22,14 @@ public class ControladorJuego {
 		return tablero.tableroIluminado();
 	}
 	
+	public int getTamano() {
+		return tamano;
+	}
+
+	public void setTamano(int tamano) {
+		this.tamano = tamano;
+	}
+
 	public boolean[][] darTablero()
 	{
 		return tablero.darTablero();
