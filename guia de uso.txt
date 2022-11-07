@@ -1,0 +1,6 @@
+GUIA DE USO
+
+funcionalidades:
+- hacer click sobre el tablero para jugar, meta poner todo el tablero en amarillo
+- el boton de tamaño funciona cuando se hace click en nuevo
+- por un bug que no se alcanzó a corregir, al hacer click en nuevo o reiniciar, el tablero no se actualiza instantaneamente. Para actualizarlo se puede tocar, o modificar el tamaño de la pestaña
