@@ -27,7 +27,7 @@ public class PControles extends JPanel implements ActionListener{
 		iniAcciones();
 		
 
-		JPanel panel = new JPanel(new GridLayout(4, 1, 900 ,190 ));
+		JPanel panel = new JPanel(new GridLayout(4, 1, HEIGHT ,WIDTH ));
 		panel.setBackground(new Color(30,144,255));
 		panel.setBounds(550, 160, 60, 70);
 
