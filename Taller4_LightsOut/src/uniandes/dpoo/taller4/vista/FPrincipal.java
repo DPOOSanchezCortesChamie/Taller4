@@ -22,8 +22,8 @@ public class FPrincipal extends JFrame implements ActionListener{
 		this.setLayout(new BorderLayout());
 		this.setTitle("LightsOut");
 	    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	    this.setSize(Toolkit.getDefaultToolkit().getScreenSize());
-	    
+	    this.setSize(500,500);
+	    //Toolkit.getDefaultToolkit().getScreenSize()
 		POpciones pOpciones = new POpciones(cntrl);
 		PControles pControles = new PControles(cntrl);
 		PJuego pJuego = new PJuego(cntrl);
