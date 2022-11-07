@@ -9,8 +9,8 @@ import java.awt.event.ComponentEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-import javax.swing.JButton;
 import javax.swing.JPanel;
+
 
 public class PJuego extends JPanel implements MouseListener{
 	

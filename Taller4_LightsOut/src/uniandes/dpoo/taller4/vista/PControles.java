@@ -22,6 +22,8 @@ import javax.swing.JRadioButton;
 public class PControles extends JPanel implements ActionListener{
 	private ControladorJuego controlador;
 	
+	private JButton nuevo;
+	
 	public PControles(ControladorJuego controlador) {
 		this.controlador = controlador;
 		iniAcciones();
@@ -31,15 +33,17 @@ public class PControles extends JPanel implements ActionListener{
 		panel.setBackground(new Color(30,144,255));
 		panel.setBounds(550, 160, 60, 70);
 
-		JButton nuevo = new JButton("Nuevo");
+		nuevo = new JButton("Nuevo");
 		nuevo.setBackground(new Color(30,144,255));
 		nuevo.setForeground(Color.white);
 		nuevo.setBounds(550,100,300,400);
+		nuevo.addActionListener(this);
 
 		JButton reiniciar = new JButton("Reiniciar");
 		reiniciar.setBackground(new Color(30,144,255));
 		reiniciar.setForeground(Color.white);
 		reiniciar.setBounds(150,100,300,400);
+		reiniciar.addActionListener(this);
 		
 		JButton top = new JButton("Top 10");
 		top.setBackground(new Color(30,144,255));
@@ -74,8 +78,12 @@ public class PControles extends JPanel implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
+		JButton b = (JButton) e.getSource();
+		if(b.getText().equals("Nuevo")) {
+			this.controlador.crearTablero();
+		} else if (b.getText().equals("Reiniciar")) {
+			this.controlador.reiniciar();
+		}
 	}
 	
 	
