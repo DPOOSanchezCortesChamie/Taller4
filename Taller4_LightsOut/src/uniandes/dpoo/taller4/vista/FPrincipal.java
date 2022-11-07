@@ -12,12 +12,10 @@ import javax.swing.JFrame;
 
 public class FPrincipal extends JFrame implements ActionListener{
 	
-	private static final int TAMANO_TABLERO_INICIAL = 5;
-
 	public FPrincipal() {
 		
 		ControladorJuego cntrl = new ControladorJuego();
-		cntrl.crearTablero(TAMANO_TABLERO_INICIAL);
+		cntrl.crearTablero();
 		
 		this.setLayout(new BorderLayout());
 		this.setTitle("LightsOut");

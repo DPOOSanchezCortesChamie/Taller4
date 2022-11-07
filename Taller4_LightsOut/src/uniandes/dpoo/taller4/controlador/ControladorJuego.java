@@ -7,11 +7,11 @@ public class ControladorJuego {
 	int tamano;
 	
 	public ControladorJuego() {
-		tamano = 5;
+		tamano = 6;
 	}
 	
-	public void crearTablero(int tamano) {
-		this.tablero = new Tablero(tamano);
+	public void crearTablero() {
+		this.tablero = new Tablero(this.tamano);
 	}
 	
 	public void jugar(int fila, int columna) {
