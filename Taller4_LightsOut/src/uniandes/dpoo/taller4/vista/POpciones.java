@@ -34,6 +34,8 @@ public class POpciones extends JPanel{
 		JComboBox seleccionDificultad = new JComboBox<>();
 		
 		seleccionDificultad.addItem("5x5");
+		seleccionDificultad.addItem("7x7");
+		seleccionDificultad.addItem("9x9");
 		
 	
 		JRadioButton botonFacil = new JRadioButton("Fácil");
