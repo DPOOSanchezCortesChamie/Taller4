@@ -7,6 +7,7 @@ import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 public class FPrincipal extends JFrame implements ActionListener{
@@ -27,7 +28,7 @@ public class FPrincipal extends JFrame implements ActionListener{
 		PControles pControles = new PControles(cntrl);
 		PJuego pJuego = new PJuego(cntrl);
 		PInfo pInfo = new PInfo();
-		
+			
 		this.add(pOpciones, BorderLayout.NORTH);
 		this.add(pControles, BorderLayout.WEST);
 		this.add(pJuego, BorderLayout.CENTER);
@@ -43,8 +44,7 @@ public class FPrincipal extends JFrame implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
 		
 	}
-
+	
 }
